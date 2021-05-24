@@ -4,27 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook+</title>
+    <title>BikeNetwork</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="menu clearfix">
-            <ul>
-                <li><a href="#">Meu YouBike</a></li>
-                <li><a href="#" class="current">Vender</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Ajuda</a></li>
-                <li><a href="#"><img src="img/flag.png" alt="flag">Minhas Ofertas</a></li>
-                <li>Ola!<a href="#">Entrar</a>ou<a href="#">Cadastre-se</a></li>
-            </ul>
-        </div>
-        <div class="main">
-            <div class="log"></div>
-        </div>
+   <div class="wrapper">
+      <div class="content">
+           <div class="nav">
+               <div class="container">
+                   <div class="nav__row">
+                       <div class="nav__body">
+                           <div class="nav__list">
+                           <ul class="nav__item">
+                               <li><a href="#" class="nav__btn">Meu YouBike</a></li>
+                               <li class=" left__active"><a href="#" class="nav__btn text__active">Vender</a></li>
+                               <li><a href="#" class="nav__btn">Forum</a></li>
+                               <li><a href="#" class="nav__btn">Contado</a></li>
+                               <li><a href="#" class="nav__btn">Ajuda</a></li>
+                            </ul>
+                            <ul class="nav__item">
+                                <li id="flag"><a href="#"  class="nav__btn text__active">Minhas Ofertas</a></li>
+                                <li class=" right__active"><p class="nav__btn_right text__active"> Ola!</p><a href="#" class="nav__btn_right text__active_link">Entrar</a><p class="nav__btn_right text__active">ou</p><a href="#" class="nav__btn_right text__active_link">Cadastre-se</a></li>
+                            </ul>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="main">
+                <div class="container">
+                    <div class="main__body">
+                        <div class="main__item">
+                            <div class="main__title">
+                            Cadastre-se
+                            </div>
+                            <div class="main__back form">
+                                <div class="form__body">
+                                     <form action="#" class="contact_form" method="post">
+                                        <div><a href="#" class="facebook"><img src="img/facebook.png" alt="facebook"></a></div>
+                                        <div><p>OU</p></div>
+                                        <div><input class="active_btm" type="text" name="firstname" placeholder="First name"></div>
+                                        <div><input class="input" type="text" name="lastname" placeholder="Last name"></div>
+                                        <div><input class="input" type="email" name="email" placeholder="Email Adress"></div>
+                                        <div><input class="input" type="password" name="passchose" placeholder="Chose Password"></div>
+                                        <div><input class="input" type="password" name="passconf" placeholder="Password confirm"></div>
+                                        <div><label><input type="checkbox" name="check"> Send me YouBike updates and tips</label></div>
+                                        <div><button class="form__btm" type="submit">Create my Account</button></div>
+                                        <div class="info">By clicking the button above, you agree to the Terms of Service
+                                        Xiew our Privacy Policy.</div>
+                                    </form>
+                                </div>     
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
-    
 </body>
 </html>

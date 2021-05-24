@@ -1,53 +1,175 @@
 body {
-  background-color: aliceblue;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 .wrapper {
-  width: 1215px;
-  height: 1064px;
-  background-color: aqua;
-  margin: 0 auto;
-  font-family: "Tahoma", sans-serif;
-  font-size: 14px;
-}
-/*menu*/
+  min-height: 100%;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ead79c, #2e7ac4);
 
-.clearfix:after {
-  content: "";
-  clear: both;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1215px;
+  margin: 0px auto;
+}
+.content {
+  flex: 1 0 auto;
+  background: url(../img/background.jpg) center 38px no-repeat;
+  background-size: cover;
+}
+/* Style for navi block */
+.nav {
+  background-color: #074e8c;
+}
+.nav__row {
+  padding: 0px 20px 0px 0px;
+  height: 38px;
+}
+.nav__body {
+}
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__item {
+  display: flex;
+}
+.nav__item:last-child {
+  border-left: 1px solid rgb(96, 181, 237);
+  display: flex;
+}
+
+.nav__item li {
+  padding: 11px 12px;
+}
+#flag {
+  background: url(../img/flag.png) 17px 7px no-repeat;
+  padding-left: 40px;
+}
+.nav__btn {
   display: block;
+  line-height: 40px;
+  font-size: 14px;
+  color: rgb(96, 181, 237);
+  line-height: 1;
 }
-.menu {
-  height: 36px;
-  background-color: #07891d;
-  padding-left: 450px;
+.nav__btn:hover {
+  color: #fff;
 }
-.menu li {
-  /* padding: 4px 10px 0px 15px;*/
-  float: left;
-  color: rgb(174, 229, 255);
+.left__active {
+  background-color: rgb(96, 181, 237);
 }
-.menu a {
-  color: #60b5ed;
-  text-decoration: none;
-  line-height: 2;
-  user-select: none; /* убирать выделение текста */
-  background: #074c89; /* фон кнопки */
-  padding: 1em 1em; /* отступ от текста */
+.right__active {
+  display: flex;
+  background: linear-gradient(#51b1dc, #2e7ac4);
+  border: 1px solid #509fd9;
+  border-radius: 2px;
 }
-.menu a.current,
-.menu a:hover {
+.text__active {
+  color: #fff;
+  margin: 0px 5px;
+}
+.text__active_link {
+  color: #fff;
+  text-decoration: underline;
+}
+/*  */
+.main {
+}
+
+.main__body {
+  margin: 215px 0px 0px 0px;
+}
+
+.main__item {
+  margin: 0px auto;
+  max-width: 590px;
+}
+.main__title {
+  height: 60px;
+  background-color: rgba(0, 0, 3, 0.6);
+  margin: 0px 0px 3px 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 24px;
+  line-height: 0.667;
+  padding: 21px 0px;
+}
+
+.main__back {
+  height: 550px;
+  padding: 27px 0px 20px 0px;
+  background-color: rgba(0, 0, 3, 0.6);
+  color: white;
+}
+.form__body {
+  margin: 0px auto;
+  max-width: 276px;
+  /* background-color: rgb(0, 0, 0); */
+  text-align: center;
+}
+.form__body div {
+  margin: 0px 0px 18px 0px;
+}
+.input {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 1.143;
+  padding: 15px 0px 9px 18px;
+  width: 100%;
+  border-bottom: 1px solid rgba(156, 138, 111, 0.61);
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+input[type="password"]::-webkit-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+input[type="email"]::-webkit-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.active_btm {
+  background-color: #1b5288;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 1.143;
+  padding: 15px 0px 9px 18px;
+  width: 100%;
+  /* -webkit-box-shadow: 0px 0px 10px 5px rgba(143, 206, 255, 0.72); */
+  /* -moz-box-shadow: 0px 0px 10px 5px rgba(143, 206, 255, 0.72); */
+  box-shadow: 0px 0px 7px 3px rgb(99, 211, 255);
+  border-bottom: none;
+}
+.form__btm {
   color: #fff;
   font-weight: 900;
-  background-color: #4eabda;
+  padding: 15px 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.143;
+  background: linear-gradient(#51b1dc, #2e7ac4);
+  letter-spacing: 0.03em;
+  border: 1px solid #6bb8e7;
 }
-/*.menu a img {
-  margin-top: 5px;
-  margin-right: 10px;
-}*/
-/*main*/
-.main {
-  height: 100%;
-  width: 100%;
-  background-color: brown;
-  background-image: url(../img/background.jpg);
+.form__body {
+  color: rgb(204, 204, 204);
+}
+.form__body p {
+  background: url(../img/line.png) center 7px no-repeat;
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  line-height: 1.143;
+}
+.form__btm:hover {
+  transition: all 0.5s;
+  background: linear-gradient(#346e8a, #1b4670);
+}
+.info {
+  font-size: 11px;
+  line-height: 1.455;
+  /* color: rgb(204, 204, 204); */
 }
