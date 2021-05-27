@@ -1,0 +1,58 @@
+table {
+  width: 500px;
+  height: 600px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+td {
+  border: 4px solid black;
+}
+tr {
+}
+.red {
+  background-color: rgb(245, 62, 62);
+  height: 170px;
+}
+.yellow {
+  background-color: yellow;
+}
+.grey {
+  background-color: rgb(56, 53, 53);
+  width: 60px;
+}
+.grey2 {
+  background-color: rgb(56, 53, 53);
+  width: 120px;
+}
+.blue {
+  background-color: blue;
+}
+
+#top {
+  border-top: none;
+}
+#bottom {
+  border-bottom: none;
+}
+#left {
+  border-left: none;
+}
+#right {
+  border-right: none;
+}
+#top_left {
+  border-top: none;
+  border-left: none;
+}
+#top_right {
+  border-top: none;
+  border-right: none;
+}
+#bottom_left {
+  border-bottom: none;
+  border-left: none;
+}
+#bottom_right {
+  border-bottom: none;
+  border-right: none;
+}
