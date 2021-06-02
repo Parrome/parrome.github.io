@@ -1,0 +1,45 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.container {
+  max-width: 909px;
+  margin: 0px auto;
+}
+.content {
+  flex: 1 1 auto;
+}
+.login {
+}
+.login__row {
+  background-color: aquamarine;
+  display: flex;
+}
+.login__tel {
+}
+.login__input {
+}
+.login__cabinet {
+}
+.banner {
+}
+.menu {
+}
+.format {
+}
+.main {
+}
+.footer {
+  background-color: aquamarine;
+}
+.mark {
+}
+.menu2 {
+}

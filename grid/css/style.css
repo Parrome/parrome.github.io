@@ -1,0 +1,227 @@
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.header {
+  grid-area: header;
+  padding: 15px;
+  background-color: rgb(201, 200, 134);
+  display: grid;
+  align-items: center;
+  grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+}
+.header__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 40%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid red;
+  grid-column: 2/3;
+}
+.header__menu {
+  grid-column: 3/4;
+}
+.header__list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: end;
+}
+.header__list li {
+  background-color: aqua;
+  margin: 0px 0px 0px 30px;
+}
+.header__link {
+  color: #fff;
+  font-size: 18px;
+}
+.header__burger {
+}
+@media (max-width: 992px) {
+  .header__list {
+    display: none;
+  }
+  .header__menu {
+    display: grid;
+    justify-items: end;
+  }
+  .header__burger {
+  }
+}
+.main {
+  background-color: salmon;
+  padding: 30px 15px;
+}
+
+.siderbar {
+  background-color: seagreen;
+
+  padding: 30px 15px;
+  margin: 0px 0px 30px 0px;
+}
+.siderbar__menu {
+}
+.siderbar__list {
+}
+.siderbar__list li {
+  margin: 0px 0px 15px 0px;
+}
+.siderbar__link {
+  color: #fff;
+  font-size: 20px;
+}
+
+.content__title {
+  font-size: 32px;
+  line-height: 40px;
+  color: rgb(75, 12, 12);
+  text-shadow: rgb(250, 249, 248) 1px 0 10px;
+}
+.content__gallery {
+  background-color: darkseagreen;
+  margin: 0px 0px 30px 0px;
+}
+@media (min-width: 992px) {
+  .main {
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+  }
+  .siderbar {
+    grid-column: 2/3;
+    margin: 0;
+  }
+  .content {
+    grid-column: 3/4;
+    padding: 0px 0px 0px 30px;
+  }
+}
+.gallery {
+}
+.gallery__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0px 0px 0px 10px;
+  color: #fff;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+.gellery__items {
+  background-color: darkslateblue;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.gallery__item {
+  background-color: darksalmon;
+  padding: 0px 0px 110% 0px;
+  position: relative;
+}
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 767px) {
+  .gallery__item_big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+.content__products {
+  background-color: darkseagreen;
+}
+.products {
+}
+.products__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0px 0px 0px 10px;
+  color: #fff;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+.products__items {
+  background-color: darkslateblue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 30px;
+  row-gap: 50px;
+}
+.products__item {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template: auto 1fr minmax(40px, auto) / 1fr;
+}
+.products__image {
+  position: relative;
+  padding: 0px 0px 140% 0px;
+  margin: 0px 0px 20px 0px;
+}
+.products__image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.products__name {
+  font-size: 24px;
+  color: #fff;
+  line-height: 30px;
+  margin: 0px 0px 20px 0px;
+}
+.products__button {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-decoration: none;
+  justify-self: start;
+  background-color: brown;
+  padding: 0px 20px;
+}
+.footer {
+  background-color: rgb(157, 119, 158);
+  display: grid;
+  grid-area: footer;
+  padding: 15px;
+  align-items: center;
+  grid-template-columns: 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer__copy {
+}
+.footer__text {
+}
+@media (min-width: 550px) {
+  .footer__copy {
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .footer__text {
+    text-align: center;
+    grid-column: 3/4;
+  }
+}
+@media (max-width: 550px) {
+  .footer {
+    grid-template-rows: 1fr/1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer__copy {
+    order: 2;
+  }
+  .footer__text {
+    order: 1;
+  }
+}
